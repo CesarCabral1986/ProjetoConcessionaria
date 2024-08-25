@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainStyles.css">
+    <script src="main.js" defer type="module"></script>
+    <script src="cadCliente.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <div id="menulateral">
+        <ul>                 
+            <li id="CadPessoa">Clientes</li>             
+            <li id="CadVeiculo">Veículo</li>
+            <li id="CadContrato">Contrato</li>
+            <li id="Relatorios">Relatorios</li>
+            <li>Sair</li>
+        </ul>   
+    </div> 
+
+    <div class="ContainerPesooa" id="ContainerPesooa" style="display: none;">
+        <Label>Cadastro de Pessoas</Label>        
+        <p class="id">Id</p>
+        <input type="text" id="inputpessoa">
+        <p class="nome">Nome</p>
+        <input type="text" id="inputnome" readonly>
+        <p class="DataNasc">Data de Nascimento</p>
+        <input type="date" id="inputdatanasc" readonly>
+        <p class="prof">Profissão</p>
+        <input type="text" id="inputprofissao" readonly>
+        <p class="renda">Renda</p>
+        <input type="text" id="inputrenda" readonly>
+        <br><br>
+        <label for="" id="feedbackPessoa"></label>
+        <br>
+        <button id="cadastrarPessoa">Cadastrar</button>
+        <button id="alterapessoa">Alterar</button>
+        <button id="saircadPessoa">Sair</button>
+    </div>
+
+    <div class="ContainerVeiculo" id="ContainerVeiculo" style="display: none;">
+        <Label>Cadastro de Veiculos</Label>        
+        <p class="id">Id</p>
+        <input type="text" id="inputidveliculo">
+        <p class="marca">Marca</p>
+        <input type="text" id="inputmarca" readonly>
+        <p class="modelo">Modelo</p>
+        <input type="text" id="inputmodelo" readonly>
+        <p class="ano">Ano</p>
+        <input type="date" id="inputano" readonly>
+        <p class="km">KM's Rodados</p>
+        <input type="number" id="inputKM" readonly>
+        <p class="cor">Cor</p>
+        <input type="text" id="inputcor" readonly>
+        <p class="diaria">Valor Diaria</p>
+        <input type="text" id="inputdiaria" readonly>
+        <p></p>
+        <label for="" id="feedbackVeiculo"></label>
+        <br><br>
+        <button id="cadastrarVeiculo">Cadastrar</button>
+        <button id="alteraVeiculo">Alterar</button>
+        <button id="saircadVeiculo">Sair</button>
+    </div>
+
+    <div class="ContainerContrato" id="ContainerContrato" style="display: none;">   
+        <Label>Cadastro de Contratos</Label>
+        <p class="id">Id</p>
+        <input type="text" id="inputidcontrato">
+        <p class="Cliente">Cliente</p>
+        <input type="text" id="inputCCliente">
+        <p class="Veiculo">Veiculo</p>
+        <input type="text" id="inputCveiculo">
+        <p class="dataSaida">Data de Saida</p>
+        <input type="date" id="inputDataSaida" readonly>
+        <button id="baixarContrato">Baixar</button> <label style="display: none;">Pago</label>
+        <p></p>        
+        <button id="cadastrarContrato">Cadastrar</button>        
+        <button id="saircadContrato">Sair</button>
+    </div>
+
+    <div class="ContainerRelatorio" id="ContainerRelatorio" style="display: none;">
+        <Label>Relatórios</Label>
+        <p class="id">Clientes</p>
+        <p>Data De Nascimento Inicial / Final</p>
+        <p></p>
+        <input type="date" id="clienteDataInicio">
+        <input type="date" id="clienteDataFim">
+        <p>Renda Inicial / Final</p>
+        <input type="number" id="rendaInicial">
+        <input type="number" id="rendaFinal">
+        <button id="buscarClientesbtn">Buscar</button>
+    </div>
+
+    <div class="relatorioclientes" id="relatorioclientes">
+    </div>
+
+
+</body>
+</html>

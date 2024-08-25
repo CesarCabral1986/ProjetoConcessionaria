@@ -1,0 +1,13 @@
+cercar erros e exibir mensagens 			|| pessoa ok || veiculo ok
+passar o relatorio para pdf				ok
+listar cadastros para seleção
+campo de cadastro excluido e exclusão de cadastro
+trabalhar no visual do sistema
+exibir imagens nos cadastros
+função de criar login
+reduzir e fatorar o codigo
+
+colocar online
+
+
+imgs\jailson.png

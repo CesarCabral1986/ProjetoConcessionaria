@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="mainStyles.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div class="logincontainer" id="logincontainer">
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <label for="" id="feedback" ></label>
+        <br><br>
+        <button type="submit" id="submitbtn">Entrar</button>
+        <button id="novoCadastrobtn">Cadastrar</button>
+    </div>
+    
+    <div class="cadastre-se_Container" id="cadastre-se_Container" style="display: none;">
+        <label for="">Nome</label>
+        <input type="text" id="Input_novoNome" name="Input_novoNome" required>
+        <label for="">Insira o novo login</label>
+        <input type="text" id="Input_novoLogin" name="Input_novoLogin" required>
+        <br><br>
+        <label for="password">Insira a senha:</label>
+        <input type="password" id="input_Novopassword" name="Input_novopassword" required>
+        <label for="password">Confirme a nova senha:</label>
+        <input type="password" id="input_ConfirmaNovopassword" name="Input_ConfirmaNovopassword" required>
+        <br>
+        <label for="" id="Cadastre-se_feedback" ></label>
+        <br><br>
+        <button type="submit" id="Cadastrar_btn">Cadastrar</button>
+    </div>
+    
+</body>
+</html>
